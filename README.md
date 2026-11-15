@@ -9,6 +9,14 @@
 - 使用标准 **stdio MCP**；支持 Windows、macOS、Linux。
 - 项目不附带任何人的课表、成绩、联系人、查询历史或缓存。
 
+## 用 Agent 一句话配置
+
+把下面这句话复制给能操作本机终端、读写文件的 Agent（如 Codex、Claude Code）：
+
+> 请帮我把 https://github.com/ChristinaSaikoy/shu-huyou-mcp 配置到我当前使用的 AI 客户端：先阅读 README，检查 Git、uv 和 Python 3.11+，将仓库克隆到合适的本地目录并按文档安装依赖；保留现有 MCP 配置，仅添加 `shu-huyou`，使用实际绝对路径；运行离线自检和 `--live` 联网验证，确认三个工具可用，并告诉我是否需要重载客户端；如果客户端仅支持远程 HTTP MCP，请说明不兼容。
+
+需要 Agent 有本机操作能力，且客户端支持本地 stdio MCP；网页聊天中粘贴这句话不会自动完成本机配置。
+
 ## 快速开始
 
 需要 [Git](https://git-scm.com/) 和 [uv](https://docs.astral.sh/uv/getting-started/installation/)。
