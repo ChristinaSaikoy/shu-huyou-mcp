@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shu-huyou-mcp"
+version = "1.0.0"
+description = "Public read-only Shanghai University Huyou MCP server"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+  "stu-mcp @ https://github.com/0error0warning/stu-mcp/releases/download/v0.4.1/stu_mcp-0.4.1-py3-none-any.whl#sha256=c8fafefed4e8aa79e06a5e3c298ff6947c6a6c6661144f5ab2bcc4337e7cb82c",
+  "mcp==2.3.0",
+  "platformdirs>=4.3,<5",
+]
+
+[project.scripts]
+shu-huyou-mcp = "shu_huyou_mcp:main"
+
+[project.urls]
+Repository = "https://github.com/ChristinaSaikoy/shu-huyou-mcp"
+
+[tool.setuptools]
+py-modules = ["shu_huyou_mcp"]
